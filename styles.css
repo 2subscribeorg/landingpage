@@ -706,22 +706,44 @@ p {
         padding: 0 var(--space-4);
     }
     
+    /* Force hero to be vertical on mobile */
+    .hero {
+        padding: var(--space-8) 0 !important;
+    }
+    
     .hero-content {
+        display: flex !important;
         flex-direction: column !important;
         text-align: center !important;
-        gap: var(--space-8) !important;
+        gap: var(--space-4) !important;
         align-items: center !important;
+        justify-content: center !important;
+        padding: var(--space-6) 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
     
     .hero-text {
         order: 1 !important;
         max-width: 100% !important;
+        width: 100% !important;
+        display: block !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex: none !important;
+        margin-bottom: var(--space-4) !important;
     }
     
     .hero-image {
         order: 2 !important;
         width: 100% !important;
         max-width: 300px !important;
+        display: block !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex: none !important;
+        margin: 0 auto !important;
     }
     
     .hero-text h1 {
@@ -775,6 +797,39 @@ p {
     .mockup-mini button {
         padding: var(--space-2) var(--space-4) !important;
         font-size: 0.75rem !important;
+    }
+    
+    /* Step 2 Specific Mobile Fixes */
+    .mockup-mini .bg-success {
+        padding: var(--space-3) !important;
+        margin-bottom: var(--space-3) !important;
+    }
+    
+    .mockup-mini .bg-success .font-bold {
+        font-size: var(--font-size-xs) !important;
+        margin-bottom: var(--space-1) !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+    
+    .mockup-mini .bg-success .text-sm {
+        font-size: 0.7rem !important;
+        margin-bottom: var(--space-1) !important;
+    }
+    
+    .mockup-mini .chip {
+        margin-top: var(--space-1) !important;
+        padding: 2px 6px !important;
+        font-size: 0.65rem !important;
+        white-space: nowrap !important;
+    }
+    
+    .mockup-mini #subscription-confirmation-feedback {
+        padding: var(--space-2) !important;
+    }
+    
+    .mockup-mini #subscription-confirmation-feedback .font-semibold {
+        font-size: 0.7rem !important;
     }
     
     .chip {
