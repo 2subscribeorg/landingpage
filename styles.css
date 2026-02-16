@@ -707,13 +707,38 @@ p {
     }
     
     .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--space-8);
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: var(--space-8) !important;
+        align-items: center !important;
+    }
+    
+    .hero-text {
+        order: 1 !important;
+        max-width: 100% !important;
+    }
+    
+    .hero-image {
+        order: 2 !important;
+        width: 100% !important;
+        max-width: 300px !important;
     }
     
     .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: var(--space-4) !important;
+    }
+    
+    .hero-text .sub-headline {
+        font-size: var(--font-size-base) !important;
+        margin-bottom: var(--space-6) !important;
+    }
+    
+    .hero-text .btn-large {
+        width: 100% !important;
+        max-width: 280px !important;
+        padding: var(--space-4) var(--space-6) !important;
     }
     
     .process-grid {
